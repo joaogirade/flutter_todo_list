@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_todo_list/widgets/todo_list_item.dart';
 
 class TodoListPage extends StatelessWidget {
-  const TodoListPage({Key? key}) : super(key: key);
+  TodoListPage({Key? key}) : super(key: key);
+
+  List<String> todos = ['Estudar Flutter', 'Estudar Dart'];
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +40,20 @@ class TodoListPage extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 16,
+              ),
+              Flexible(
+                child: ListView(
+                  shrinkWrap: true,
+                  children: [
+                    for(String todo in todos)
+                      TodoListItem(
+
+                      )
+                  ],
+                ),
               ),
               SizedBox(
                 height: 16,
