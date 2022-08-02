@@ -1,6 +1,6 @@
-# flutter_todo_list
+# Flutter Todo List
 
-A new Flutter project.
+A Flutter project for training.
 
 ## Getting Started
 
