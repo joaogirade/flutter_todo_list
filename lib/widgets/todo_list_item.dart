@@ -34,19 +34,19 @@ class TodoListItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             color: Colors.grey[200],
           ),
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
                 DateFormat('dd/MM/yyyy - HH:mm').format(todo.dateTime),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 14,
                 ),
               ),
               Text(
                 todo.title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
                 ),

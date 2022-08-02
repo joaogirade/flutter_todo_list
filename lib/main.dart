@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/todo_list_page.dart';
 
 void main() {
-  runApp(AppToDo());
+  runApp(const AppToDo());
 }
 
 class AppToDo extends StatelessWidget {
@@ -10,7 +10,7 @@ class AppToDo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: TodoListPage(),
     );
